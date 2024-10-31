@@ -2,9 +2,9 @@
 
 $ovoce = ["jablko", "hruska", "jablko", "pomeranc", "hruska"];
 
-$serazeny = array_unique($ovoce);
+$ovoce1 = array_unique($ovoce);
 
-print_r($serazeny);
+print_r($ovoce1);
 
 //--------------------------------
 
