@@ -1,17 +1,17 @@
 <?php
-    //tohle je jednoradkovy koment
+    //tohle je 1 radek koment
 
     /*
-    vic radku komentar lol
-    lol
-    lol
-    lol
-    lol
-    lolo
-    l
-    lllolollolo 
+    vic radku komentar 
+    d
+    d
+
+    d
+    d
+
+    d
 
     */
 
-    echo"vypis do html soubursss";
+    echo"vypúis do souboru html ";
 ?>
