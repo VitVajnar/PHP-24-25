@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>php hnus</title>
+    <title>php </title>
 </head>
 <body>
-    <h1>php fuj prvni</h1>
+    <h1>php </h1>
 
     <?php
-        echo "ahoj php fuj";
+        echo "php";
     ?>
 </body>
 </html>
