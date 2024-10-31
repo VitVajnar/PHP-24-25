@@ -6,13 +6,13 @@ sort($pole);
 
 $pole2 = [15, 6, 9];
 
-$spojene_pole = array_merge($pole, $pole2);
+$pole3 = array_merge($pole, $pole2);
 
-print_r($spojene_pole);
+print_r($pole3);
 
-rsort($spojene_pole);
+rsort($pole3);
 
-$text = implode(",", $spojene_pole);
+$text = implode(",", $pole3);
 
 echo($text);
 
