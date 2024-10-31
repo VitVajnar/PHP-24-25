@@ -1,19 +1,19 @@
 <?php
-    //koncovka php bleeeh
+    //koncovka php 
     //server sided, case sensitive
 
     echo"vypis";
-    echo "<br>"; //pouziti html vecicek do php. ??? 
+    echo "<br>"; //pouziti html do php
     echo "9";
 
     /*
-        chyba kodu me vypne celyho
+        cccc
 
-        sdadasdsjsdjsda
+        
     */
     // promenna
-    //datovy typy string integer boolean idk dal neco tam je
-    $jmeno = "patrik";
+    //datovy typy string integer boolean 
+    $jmeno = "vajny";
     $vek = "16";
 
     echo $jmeno;
