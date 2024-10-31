@@ -1,6 +1,6 @@
 <?php
 
-$pole = ["pes", "kočka", "králík"];
+$pole = ["pes", "kocka", "kralík"];
 $pole[] = "papoušek";
 
 echo $pole[0];
