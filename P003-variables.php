@@ -7,7 +7,7 @@
     <title>promenne</title>
 </head>
 <body>
-    <h1>datove typy bleeeeh</h1>
+    <h1>datove typy </h1>
     <table border="1">
         <tr>
             <th>datovy typ</th>
@@ -18,8 +18,8 @@
         <tr>
             <td>string</td>
             <td>text</td>
-            <td>"ahoj php fuj"</td>
-            <td>$text = "ahoj php fuj";</td>
+            <td>"php"</td>
+            <td>$text = "ph";</td>
         </tr>
         <tr>
             <td>integer</td>
@@ -53,7 +53,7 @@
         </tr>
     </table>
     <?php
-    $text = "ahoj php fuj";
+    $text = "php";
     echo "<br>";
     echo $text;
 
@@ -115,29 +115,29 @@
     if ($vek_kamose == 18) {
         echo "vsechno nejlepsi";
     } else {
-        echo "nemas narozky kamo";
+        echo "nemas narozky broooo";
     }
     echo "<br>";
 
     //nerovno [!=]
     if ($vek_kamose != 0) {
-        echo "co tu delas za finty bro";
+        echo "nezkousej nic";
     }
 
 
     // vetsi nez [>]
     if ($vek_kamose > 18) {
-        echo "uz muzes pit fetko";
+        echo "nepij";
     }
     echo "<br>";
     //mensi nez [<]
     if ($vek_kamose < 18) {
-        echo "nemuzes pit bro";
+        echo "nemuzes pit brooooo";
     }
     echo "<br>";
     //mensi nebo rovno [<=]
     if ($vek_kamose <= 14) {
-        echo "nemuzes pit bro";
+        echo "nemuzes pit brooooooo";
     }
 
     //vetsi nebo rovno je to stejny jak to nahore ale nechci to psat bleeh
@@ -153,7 +153,7 @@
     $dresscode = "ano";
 
     if ($vek_kamarada >= 16 && $darek == "ano" && $dresscode == "ano") {
-        echo "jsi pozvany bro";
+        echo "jsi pozvany broooooooooo";
 
     }
 
@@ -161,13 +161,13 @@
     //STACI SPLNENI JEDNE PODMINKY
     echo "<br>";
     if ($vek_kamarada > 16 || $darek == "ano" && $dresscode == "ano") {
-        echo "jsi pozvany bro";
+        echo "jsi pozvany brooooooo";
 
     }
 
     //NOT [! ktery se pripojue k dalsimu operatutu] negace nejde pouzit na vsechno
     if ($vek_kamarada =! 4) {
-        echo "neni ti 6 let";
+        echo "ty si uplne youngboyyyyyy";
     }
     ?>
 
