@@ -2,13 +2,13 @@
 <?php
 
 //deklarace datoveho typu pole
-$pole = array("jabko", "hruska", "vitek");
+$pole = array("jabko", "hruska", "banana");
 
 print_r($pole); //vypis array 
 
 echo "<br>";
 
-$zkracene_pole = ["ukazka1", 2];
+$zkracene_pole = ["ukazka", 2];
 print_r($zkracene_pole);
 
 
@@ -23,14 +23,14 @@ echo "<br>";
 echo "<br>";
 
 
-$pole[] = "vanmax23"; // prida polozku do array
+$pole[] = "idk"; // prida polozku do array
 print_r($pole);
 
 
 echo "<br>";
 
 
-$pole[0] = "yehorek"; // prida na konkretni pozici (das do zavorky cislo), pokud tam uz nejaka byla, tak ji prepise :(
+$pole[0] = "vajny"; // prida na konkretni pozici (das do zavorky cislo), pokud tam uz nejaka byla, tak ji prepise :(
 print_r($pole);
 
 echo "<br>";
@@ -66,7 +66,7 @@ echo $vysledek; // vypsani promenne prumeru
 
 echo "<br>";
 
-$stejnehodnoty = array("banan", "max", "vitek", "banan");
+$stejnehodnoty = array("banan", "max", "sofijan", "banan");
 $pole_stejnehodnoty = array_unique($stejnehodnoty); // odstraneni duplikatu z arraye
 print_r($pole_stejnehodnoty);
 
@@ -91,17 +91,17 @@ echo "<br>";
 
 // spojeni vice poli dohromady
 
-$pole22 = array("ahoj", "cs", "pribinacek");
-$pole23 = array("vitek", "yehorek", "vanmax23");
+$pole4 = array("ahoj", "cau", "ahojda");
+$pole5 = array("jirka", "kral", "alkanpozitko");
 
-$pole_stejnehodnoty = array_merge($pole22, $pole23);
+$pole_stejnehodnoty = array_merge($pole4, $pole5);
 print_r($pole_stejnehodnoty);
 
 echo "<br>";
 
 //razeni pole - sort, rsort, asort, ksort
 
-$razene_pole = array(1, 4, 2, 6, 88, 22, 12, 3); //seradi od A/ nejmensiho do Z/ nejvetsiho
+$razene_pole = array(1, 4, 2, 6, 88, 78, 14, 3); //seradi od A/ nejmensiho do Z/ nejvetsiho
 sort($razene_pole);
 print_r($razene_pole);
 
