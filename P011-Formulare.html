@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuláře</title>
+</head>
+<body>
+    <form action="">
+        <!--zakladni prvek formulare input-->
+        <!--ZÁKLADNÍ ATRIBUTY
+        1. required pole musí být vyplněno
+        2.placeholder dočasný text uvnitř pole
+        3.value převyplní hodnotu pole
+        4.min a max omezí nejvyšší a nejnižší zadavtelnou hodnotu 
+        5. stanovuje výraz který má být zadaný nesedí dle vzoru tak nejde odeslat
+        
+        
+        -->
+        
+
+        <input type="text"> <!--editovatelne pole o 255 znacích-->
+        <br>
+        <input type="email" value="@gmail.com"><!--vstup emailu-->
+        <br>
+        <input type="password" placeholder="dočasný text"><!--heslo--> 
+        <br>
+        <input type="number" min="0" max="5"><!--číslo text není povolen-->
+        <br>
+        <input type="date"> <!--vstup je datum nebo čas-->
+        <br>
+        <label for="sport" value="sport">sport</label> <!--nepovinný příkaz slouží k ukázání inputu nic nedělá-->
+        <input type="checkbox"><!--zaškrtávací pole bez value nemá hodnotu-->
+
+        <label for="hudba">hudba</label>
+        <input type="checkbox" value="hudba">
+
+        <label for="cestování">cestování</label>
+        <input type="checkbox" value="cestování">
+
+        <br>
+
+        <label for="muz">Muž</label>
+        <input type="radio" value="muz" name="pohlavi"><!--jeden výběr z hodnot povinně pro určení hodnot  
+        stejná hodnota u atributu spojuje radio buttony dohromady jinak jsou k ničemu-->
+
+        <label for="zena">Žena</label>
+        <input type="radio" value="zena" name="pohlavi">
+
+
+        <br>
+
+
+
+        <!--Výběrový seznam select - option(s)-->
+        <select name="" id="">
+            <option value=""></option><!--Good practice donutí uživatele vybrat-->
+            <option value="Praha">Praha</option>
+            <option value="Plzen">Plzěn</option>
+            <option value="Jihlava">Jihlava</option>
+        </select>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea><!--slouží k zápisu vetšího množství textu cols=sloupce rows=řádky-->
+
+        <br>
+        <!--Sběr dat z formuláře-->
+        <input type="submit">
+        <button type="submit">odeslat btn</button>
+        <button type="reset">vymazat formulář</button>
+    </form>
+    
+</body>
+</html>
