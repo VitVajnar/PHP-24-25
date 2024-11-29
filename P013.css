@@ -1,0 +1,17 @@
+.textove_vstup{
+background-color: red;
+}
+input[type='text']{
+width: 100%;
+border-radius: 10px;
+}
+/*prvek do ktereho se  dela neco aktivne napr. pise*/
+input[type='text']:focus{
+background-color: blueviolet;
+}
+input[type='text']:hover{
+    background-color: blueviolet;
+    }
+input[type='text']:disabled{
+    background-color: blueviolet;
+    }
