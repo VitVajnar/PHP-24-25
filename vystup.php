@@ -1,16 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .radek{
+        border: 5px solid black;
+        display: flex;
+        width: 200px;
+        height: 50px;
+        background-color: red;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .radek_blue{
+        border: 5px solid black;
+        display: flex;
+        width: 200px;
+        height: 50px;
+        background-color: blue;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+    .tlacitko{
+        
+    }
+</style>
+<body>
+    <div class="container">
 <?php
-//Zisk dat z FRM v HTML promenna = $_metoda[hodnota atributu name]
-$jmeno = $_GET['jmeno'];
-$heslo = $_GET['heslo'];
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $jmeno = $_POST["jmeno"];
+        $prijmeni = $_POST["prijmeni"];
+        $narozeni = $_POST["narozeni"];
+        $pohlavi = $_POST["pohlavi"];
 
-echo $jmeno.''.$heslo;
+        $otevreni_zapis = fopen("zaloha.csv", "a");
+
+        for ($i=0; $i < 4; $i++) { 
+            if ($i == 0 or $i == 2) {
+                echo "<div class='radek_blue'></div>";
+            } else {
+                echo "<div class='radek'></div>";
+            }
+        }
+
+        $zapis = [$jmeno, $prijmeni, $narozeni, $pohlavi];
 
 
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $jmeno = $_GET['jmeno'];
-    $heslo = $_GET['heslo'];
+        fputcsv($otevreni_zapis, $zapis);
     
-    echo $jmeno.''.$heslo; 
-}
+//z nejakeho duvodu nefunguje to cteni. nevim proc. proto to je v komentari
+
+        //fclose($otevreni_zapis);
+
+        //$otevreni_cteni = fopen("zaloha.csv", "r")
+
+        //while (($radek = fgetcsv($otevreni_cteni)) == true) {
+            //echo "<ol>";
+            //foreach ($radek as $bunka) {
+                //echo "<li>" . htmlspecialchars($bunka) . "</li>";
+            //}
+            //echo "</ol>";
+
+
+            //fclose($otevreni_cteni);
+        //} 
+    }
 ?>
+</div>
+    <a href="index.html">cus</a>
+</body>
+</html>
